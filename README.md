@@ -3,7 +3,7 @@
 Deploy your own damn app:
 
 1. Get an AWS bucket
-2. Push this button: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/gregburek/heroku-docker-registry)
+2. Push this button: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/kennethkalmer/heroku-docker-registry)
 3. `docker login https://<your-cool-app-name>.herokuapp.com`
 
 A new app will be deployed to your Heroku account, using AWS s3 as a storage
@@ -15,7 +15,7 @@ are not a robot.
 
 [Docker Registry](https://github.com/docker/docker-registry) is a python
 application and a python module. This repo includes it in
-[`requirements.txt`](https://github.com/gregburek/heroku-docker-registry/blob/master/requirements.txt#L1),
+[`requirements.txt`](https://github.com/kennethkalmer/heroku-docker-registry/blob/master/requirements.txt#L1),
 and deploys it to Heroku as a web app.
 
 The [nginx buildpack](https://github.com/ryandotsmith/nginx-buildpack) provides
