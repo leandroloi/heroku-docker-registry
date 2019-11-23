@@ -1,29 +1,22 @@
 {
     "name": "A Docker Registry, on Heroku",
     "description": "Runs docker-registry as a Heroku app",
-    "website": "https://github.com/kennethkalmer/heroku-docker-registry",
-    "repository": "https://github.com/kennethkalmer/heroku-docker-registry",
+    "website": "https://github.com/leandroloi/heroku-docker-registry",
+    "repository": "https://github.com/leandroloi/heroku-docker-registry",
     "success_url": "/",
     "keywords": [
         "docker",
         "registry"
     ],
     "addons": [
-        "newrelic",
         "heroku-postgresql"
     ],
     "env": {
         "AWS_KEY": { "description":"Your AWS API key" },
         "AWS_SECRET": { "description":"Your AWS API secret key" },
         "AWS_BUCKET": { "description":"Your AWS S3 bucket" },
-        "REGISTRY_USERNAME": {
-          "description":"HTTPS Basic Auth Username",
-          "generator": "secret"
-        },
-        "REGISTRY_PASSWORD": {
-          "description":"HTTPS Basic Auth Password",
-          "generator": "secret"
-        },
+        "REGISTRY_USERNAME": {"description":"HTTPS Basic Auth Username"},
+        "REGISTRY_PASSWORD": {"description":"HTTPS Basic Auth Password"},
         "BUILDPACK_URL": "https://github.com/leandroloi/heroku-buildpack-multi.git",
         "DOCKER_REGISTRY_CONFIG": "/app/config.yml",
         "SEARCH_BACKEND": "sqlalchemy",
