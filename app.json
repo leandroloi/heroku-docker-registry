@@ -24,7 +24,7 @@
           "description":"HTTPS Basic Auth Password",
           "generator": "secret"
         },
-        "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
+        "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-multi.git",
         "DOCKER_REGISTRY_CONFIG": "/app/config.yml",
         "SEARCH_BACKEND": "sqlalchemy",
         "SETTINGS_FLAVOR": "s3",
